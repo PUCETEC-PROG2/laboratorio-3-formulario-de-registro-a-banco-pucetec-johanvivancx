@@ -17,72 +17,108 @@
 <body>
     <!--Titulo principal de la pagina-->
     <h1>Laboratorio 3 - PUCE Banco</h1>
+     <!-- Párrafo de bienvenida y descripción del propósito del laboratorio -->
     <p>Bienvenido al laboratorio 3 del curso de Desarrollo de Aplicaciones Web. En este laboratorio, implementaremos una
         aplicación web para un banco ficticio llamado PUCE Banco.</p>
-    <h2>Nombre del estudiante: Johan Vivanco</h2>
+       <!-- Subtítulo que muestra el nombre del estudiante -->
+        <h2>Nombre del estudiante: Johan Vivanco</h2>
 
+        <!-- Inicio del formulario. action="#" evita envío a otra página; method="post" indica método POST -->
     <form action="#" method="post">
+                <!-- Contenedor para el campo 'Nombre' -->
         <div>
+            <!-- Etiqueta asociada al input de nombre -->
             <label for="nombre">Nombre:</label>
+          <!-- Campo de texto para el nombre del cliente; requerido -->
             <input id="nombre" name="nombre" type="text" placeholder="Nombre del cliente" required />
         </div>
-
+        <!-- (Aquí había un cierre de div extra en el original; el comentario explica la siguiente etiqueta) -->
+        <!-- Etiqueta para Apellido Paterno -->
         </div>
         <label for="apellidoPaterno">Apellido Paterno:</label>
+                <!-- Campo de texto para el apellido paterno; requerido -->
         <input id="apellidoPaterno" name="apellidoPaterno" type="text" placeholder="Apellido paterno del cliente"
             required />
         </div>
-
+        <!-- Contenedor para Apellido Materno -->
         <div>
+                    <!-- Etiqueta para Apellido Materno -->
             <label for="apellidoMaterno">Apellido Materno:</label>
+            <!-- Campo de texto para el apellido materno; requerido -->
             <input id="apellidoMaterno" name="apellidoMaterno" type="text" placeholder="Apellido materno del cliente"
                 required />
         </div>
 
+        <!-- Contenedor para número de cédula -->
         <div>
+            <!-- Etiqueta para cédula -->
             <label for="cedula">Número de cédula:</label>
+            <!-- Campo de texto para el número de cédula; requerido -->
             <input id="cedula" name="cedula" type="text" placeholder="Número de cédula del cliente" required />
         </div>
 
+    <!-- Contenedor para el motivo de apertura -->
 
         <div>
+                        <!-- Etiqueta para el textarea donde el cliente explica el motivo -->
             <label for="motivo">Motivo de apertura de cuenta:</label><br />
+  <!-- Área de texto para detallar el motivo; filas y columnas definidas; requerida -->
             <textarea id="motivo" name="motivo" rows="4" cols="40"
                 placeholder="Motivo de apertura de cuenta del cliente" required></textarea>
         </div>
 
+                <!-- Contenedor para selección del tipo de cuenta -->
         <div>
+                <!-- Etiqueta para el select de tipo de cuenta -->
             <label for="tipoCuenta">Tipo de cuenta:</label>
+            <!-- Lista desplegable con opciones de cuenta; requerida -->
             <select id="tipoCuenta" name="tipoCuenta" required>
+                  <!-- Opción por defecto vacía que invita a seleccionar -->
                 <option value="">-- Selecciona una opción --</option>
+                        <!-- Opción Ahorros -->
                 <option value="Ahorros">Ahorros</option>
                 <option value="Corriente">Corriente</option>
             </select>
         </div>
 
+        <!-- Contenedor para la dirección de domicilio usando fieldset -->
         <div>
+            <!-- Fieldset agrupa campos relacionados (dirección) -->
             <fieldset>
+                <!-- Leyenda para indicar que los campos son de la dirección -->
                 <legend>Dirección de domicilio</legend>
+                <!-- Etiqueta para la calle -->
                 <label for="calle">Calle:</label>
+                <!-- Campo de texto para la calle; requerido -->
                 <input id="calle" name="calle" type="text" placeholder="Calle del domicilio del cliente" required />
+                <!-- Saltos de línea para separar visualmente los campos -->
                 <br /><br />
 
+                <!-- Etiqueta para el número -->
                 <label for="numero">Número:</label>
+                <!-- Campo de texto para el número; requerido -->
                 <input id="numero" name="numero" type="text" placeholder="Número del domicilio del cliente" required />
                 <br /><br />
 
+                <!-- Etiqueta para la intersección -->
                 <label for="interseccion">Intersección:</label>
+                <!-- Campo de texto para la intersección; requerido -->
                 <input id="interseccion" name="interseccion" type="text"
                     placeholder="Intersección del domicilio del cliente" required />
             </fieldset>
         </div>
 
+        <!-- Contenedor para subir una foto -->
         <div>
+            <!-- Etiqueta para el input de archivo -->
             <label for="foto">Cargar foto:</label>
+            <!-- Input tipo file que acepta solo imágenes (image/*) -->
             <input id="foto" name="foto" type="file" accept="image/*" />
         </div>
 
+        <!-- Contenedor para el botón de envío -->
         <div>
+            <!-- Botón de tipo submit que envía el formulario -->
             <button type="submit">Confirmar1</button>
         </div>
 
